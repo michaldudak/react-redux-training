@@ -1,6 +1,9 @@
 import React, { Component } from 'react';
-import ProductList from './products/ProductList';
+import { Route, Link, Switch } from 'react-router-dom';
 import MainNavigation from './commons/MainNavigation';
+import ProductsPage from './products/ProductsPage';
+import CartPage from './cart/CartPage';
+import NotFoundPage from './commons/NotFoundPage';
 
 export default class App extends Component {
 
@@ -8,10 +11,15 @@ export default class App extends Component {
 		return (
 			<div className='page'>
 				<header>
-					<h1><a href="/">React Store</a></h1>
+					<h1><Link to='/'>React Store</Link></h1>
 					<MainNavigation />
 				</header>
-				<ProductList />
+
+				<Switch>
+					<Route exact path='/' component={ProductsPage} />
+					<Route path='/cart' component={CartPage} />
+					<Route component={NotFoundPage} />
+				</Switch>
 			</div>
 		)
 	}

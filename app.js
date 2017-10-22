@@ -32,15 +32,15 @@ app.use(webpackHotMiddleware(bundler, {
 }));
 
 app.use(express.static(path.join(__dirname, 'public')));
-app.get('/', function(req, res) {
-	res.sendFile(__dirname + '/public/index.html');
-});
 
 // routing
 router.get('/products', products.getAll);
 router.get('/orders', orders.getAll);
 router.get('/orders/:id', orders.get);
 router.post('/orders', orders.create);
+router.get(/\/[a-zA-Z]*$/, function(req, res) {
+	res.sendFile(__dirname + '/public/index.html');
+});
 
 var port = app.get('port');
 http.createServer(app).listen(port, function() {
