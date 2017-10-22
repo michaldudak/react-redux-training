@@ -1,7 +1,7 @@
 {
-	"name": "angular-js-training",
-	"version": "1.2.0",
-	"description": "Angular JS Training",
+	"name": "react-training",
+	"version": "1.0.0",
+	"description": "React Training",
 	"main": "app.js",
 	"scripts": {
 		"start": "node app"
@@ -12,13 +12,13 @@
 	},
 	"repository": {
 		"type": "git",
-		"url": "https://github.com/michaldudak/fp-angular-js-training.git"
+		"url": "https://github.com/michaldudak/react-redux-training.git"
 	},
 	"private": true,
 	"dependencies": {
-		"body-parser": "~1.15.2",
-		"express": "~4.14.0",
-		"morgan": "~1.7.0",
+		"body-parser": "^1.18.2",
+		"express": "^4.16.2",
+		"morgan": "^1.9.0",
 		"prop-types": "^15.6.0",
 		"react": "^16.0.0",
 		"react-dom": "^16.0.0",
@@ -39,7 +39,6 @@
 		"eslint-loader": "^1.9.0",
 		"eslint-plugin-react": "^7.4.0",
 		"file-loader": "^1.1.5",
-		"redux-devtools": "^3.4.0",
 		"style-loader": "^0.19.0",
 		"webpack": "^3.8.1",
 		"webpack-dev-server": "^2.9.2",
