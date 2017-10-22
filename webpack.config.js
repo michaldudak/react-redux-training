@@ -2,13 +2,13 @@ var path = require('path');
 var webpack = require('webpack');
 
 module.exports = {
-	context: path.resolve(__dirname, 'public'),
+	context: path.resolve(__dirname, 'src'),
 	resolve: {
 		extensions: [ '.js', '.jsx' ]
 	},
 	entry: [
 		'webpack-hot-middleware/client?path=http://localhost:3000/__webpack_hmr',
-		'./scripts/index.js'
+		'./index.js'
 	],
 	target: 'web',
 	output: {
