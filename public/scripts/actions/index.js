@@ -1,6 +1,6 @@
 export const actionTypes = {
 	ADD_TO_CART: "ADD_TO_CART",
-	LOAD_PRODUCTS: "LOAD_PRODUCTS"
+	LOAD_PRODUCTS_SUCCESS: "LOAD_PRODUCTS_SUCCESS"
 };
 
 export function addToCart(product) {
@@ -10,8 +10,19 @@ export function addToCart(product) {
 	};
 }
 
-export function loadProducts() {
+export function loadProductsSuccess(products) {
 	return {
-		type: actionTypes.LOAD_PRODUCTS
+		type: actionTypes.LOAD_PRODUCTS_SUCCESS,
+		products
+	};
+}
+
+export function loadProducts() {
+	return function(dispatch) {
+		return fetch('/products')
+			.then(response => response.json())
+			.then(products => {
+				dispatch(loadProductsSuccess(products))
+			}).catch(err => { throw(err); });
 	}
 }
