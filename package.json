@@ -10,14 +10,34 @@
 		"name": "Michał Dudak",
 		"email": "mdudak@future-processing.com"
 	},
-	"repository" : {
+	"repository": {
 		"type": "git",
 		"url": "https://github.com/michaldudak/fp-angular-js-training.git"
 	},
 	"private": true,
 	"dependencies": {
+		"body-parser": "~1.15.2",
 		"express": "~4.14.0",
 		"morgan": "~1.7.0",
-		"body-parser": "~1.15.2"
+		"prop-types": "^15.6.0",
+		"react": "^16.0.0",
+		"react-dom": "^16.0.0",
+		"react-redux": "^5.0.6",
+		"redux": "^3.7.2",
+		"redux-immutable-state-invariant": "^2.1.0"
+	},
+	"devDependencies": {
+		"babel-core": "^6.26.0",
+		"babel-loader": "^7.1.2",
+		"babel-plugin-transform-class-properties": "^6.24.1",
+		"babel-preset-env": "^1.6.1",
+		"babel-preset-react": "^6.24.1",
+		"css-loader": "^0.28.7",
+		"file-loader": "^1.1.5",
+		"redux-devtools": "^3.4.0",
+		"style-loader": "^0.19.0",
+		"webpack": "^3.8.1",
+		"webpack-dev-server": "^2.9.2",
+		"webpack-hot-middleware": "^2.20.0"
 	}
 }
