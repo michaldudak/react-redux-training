@@ -1,5 +1,5 @@
-# Angular JS Training
-This application is used for Angular JS training in [Future Processing](http://www.future-processing.com).
+# Angular JS Training in React
+This application was used for Angular JS training in [Future Processing](http://www.future-processing.com) but now it's helping me to learn React.
 
 ## Setup
 To run the project, you need to have node.js installed on your machine. Head over to http://nodejs.org/ to get the latest version.
@@ -8,6 +8,3 @@ To install the dependencies, open the console, enter the project's directory and
 
 ## Running the server
 Executing `node app` will start up the web server on local port 3000. Open your browser and type in http:\\localhost:3000 in the address bar to see the site.
-
-## Additional resources
-For a summary of directive communication methods take a look at http://blog.dudak.pl/2014/angular-js-directive-communication-guide-part-1 and http://blog.dudak.pl/2014/angular-js-directive-communication-guide-part-2

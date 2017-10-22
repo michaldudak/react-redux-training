@@ -1,7 +1,7 @@
 {
-	"name": "angular-js-training",
-	"version": "1.2.0",
-	"description": "Angular JS Training",
+	"name": "react-training",
+	"version": "1.0.0",
+	"description": "React Training",
 	"main": "app.js",
 	"scripts": {
 		"start": "node app"
@@ -10,14 +10,14 @@
 		"name": "Michał Dudak",
 		"email": "mdudak@future-processing.com"
 	},
-	"repository" : {
+	"repository": {
 		"type": "git",
-		"url": "https://github.com/michaldudak/fp-angular-js-training.git"
+		"url": "https://github.com/michaldudak/react-redux-training.git"
 	},
 	"private": true,
 	"dependencies": {
-		"express": "~4.14.0",
-		"morgan": "~1.7.0",
-		"body-parser": "~1.15.2"
+		"body-parser": "^1.18.2",
+		"express": "^4.16.2",
+		"morgan": "^1.9.0"
 	}
 }
