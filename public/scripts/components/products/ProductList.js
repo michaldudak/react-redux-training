@@ -9,7 +9,9 @@ class ProductList extends Component {
 	render() {
 		return (
 			<table className='products'>
-				{this.props.products && this.props.products.map(p => <ProductDetails key={p.id} product={p} onAddedToCart={() => this.props.addToCart(p)} />)}
+				<tbody>
+					{this.props.products && this.props.products.map(p => <ProductDetails key={p.id} product={p} onAddedToCart={() => this.props.addToCart(p)} />)}
+				</tbody>
 			</table>
 		);
 	}
