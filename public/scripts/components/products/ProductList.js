@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import ProductDetails from './ProductDetails';
 import { connect } from 'react-redux';
-import { addToCart } from "../../store/store";
+import { addToCart } from "../../actions";
 import PropTypes from 'prop-types';
 
 class ProductList extends Component {
@@ -17,7 +17,7 @@ class ProductList extends Component {
 	}
 }
 
-function mapStateToProps(state, ownProps) {
+function mapStateToProps(state) {
 	return {
 		products: state.products
 	}

@@ -1,4 +1,5 @@
-import React, {Component} from 'react';
+import {Component} from 'react';
+import PropTypes from 'prop-types';
 
 export default class QuantityIndicator extends Component {
 	render() {
@@ -19,3 +20,7 @@ export default class QuantityIndicator extends Component {
 		return text;
 	}
 }
+
+QuantityIndicator.propTypes = {
+	count: PropTypes.number.isRequired
+};

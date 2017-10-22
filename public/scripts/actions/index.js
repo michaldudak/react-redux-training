@@ -21,8 +21,7 @@ export function loadProducts() {
 	return function(dispatch) {
 		return fetch('/products')
 			.then(response => response.json())
-			.then(products => {
-				dispatch(loadProductsSuccess(products))
-			}).catch(err => { throw(err); });
-	}
+			.then(products => { dispatch(loadProductsSuccess(products)) })
+			.catch(err => { throw(err); });
+	};
 }
